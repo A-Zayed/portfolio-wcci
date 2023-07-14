@@ -1,0 +1,226 @@
+
+/*
+COLOR THEME
+
+#12263A PRUSSIAN BLUE
+#06BCC1 ROBIN EGG BLUE
+#C5D8D1 ASH GREY
+----------------
+*/
+
+
+/* -------------NAV------------*/
+
+* {font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.618em;
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    font-size: 16px;
+
+    margin-top: 3em;
+}
+
+nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex: row;
+    justify-content: center;
+
+    background: #06BCC1;
+}
+
+nav a {
+    padding: .5em 2em;
+    text-decoration: none;
+    color:#C5D8D1;
+}
+
+nav a:hover{
+    background: #12263A;
+}
+
+ h2 {
+    color: #06BCC1;
+}
+
+
+
+body {
+    background-color: #12263A;
+}
+
+main {
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-top: 3em;
+    margin: 10%;
+    min-width: 300px;
+}
+
+.work {
+    margin: 1em 0;
+    padding-top: 3em;
+    min-height: 20em;
+}
+
+section > p { 
+    margin: 1em 0;
+    color: #C5D8D1;
+}
+
+section ul {
+    padding-left: 1.5em;
+}
+
+#allwork {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+
+    grid-column-gap: 1em;   
+}
+
+
+#allwork article {
+    background: #C5D8D1;
+    padding: 1em;
+}
+
+
+
+li {
+    color: #12263A;
+}
+
+
+
+#allwork article img {
+    width: 100%;
+    border: 1px solid #06BCC1;
+    display: flex;
+}
+
+
+/*-------CAROUSEL FOR EACH------*/
+
+.carousel {
+    position: relative;
+  }
+  
+  .carousel__item {
+    height: 300px;
+    color: #ffffff;
+    display: none;
+  }
+  
+  .carousel__item--selected {
+    display: block;
+  }
+  
+  .carousel__nav {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  .carousel__button {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .carousel__button--selected {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+ /*-----FOOTER------*/
+
+ .footerWrap {
+    width:100%;
+    position:fixed;
+    bottom: 1em;
+    height: 1em;
+}
+.footer {
+    width: 100%;
+}
+.footerContent {
+    float:left;
+    width:100%;
+    color:#C5D8D1;
+    background-color:#06BCC1;
+}
+.footer p {
+    float:left; 
+    width:100%; 
+    text-align:center; 
+}
+
+/*------ FADE IN ANIMATION--------*/
+
+.fade-in {
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }}

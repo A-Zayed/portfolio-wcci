@@ -1,0 +1,202 @@
+* {font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.618em;
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+
+}
+
+/*
+COLOR THEME
+
+#12263A PRUSSIAN BLUE
+#06BCC1 ROBIN EGG BLUE
+#C5D8D1 ASH GREY
+----------------
+*/
+
+html {
+    font-size: 16px;
+
+    margin-top: 3em;
+}
+
+
+h1, h2, h3 {
+    color: #06BCC1;
+}
+
+body {
+    background-color: #12263A;
+
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+header {
+ justify-content: center;
+    
+}
+
+header h1 {
+    font-size: 5em;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    padding-top: 30%;
+}
+
+header h2 {
+    font-size: 1.5em;
+    color:#C5D8D1;
+    display: flex;
+    flex: row;
+    justify-content: center;
+}
+
+nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex: row;
+    justify-content: center;
+
+    background: #06BCC1;
+}
+
+nav a {
+    padding: .5em 2em;
+    text-decoration: none;
+    color:#F4EDEA;
+}
+
+nav a:hover{
+    background: #12263A;
+}
+
+section {
+    margin: 1em 0;
+    padding-top: 3em;
+    min-height: 20em;
+}
+
+section > p { 
+    margin: 1em 0;
+    color: #C5D8D1;
+}
+
+section ul {
+    padding-left: 1.5em;
+}
+
+#allwork {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 1em;
+    
+}
+
+#allwork article {
+    background: #C5D8D1;
+    padding: 1em;
+
+}
+
+li {
+    color: #C5D8D1;
+}
+
+#allwork article img {
+    width: 100%;
+    border: 1px solid #06BCC1;
+}
+.footerWrap {
+    width:100%;
+    position:fixed;
+    bottom: 1em;
+    height: 1em;
+}
+.footer {
+    width: 100%;
+}
+.footerContent {
+    float:left;
+    width:100%;
+    color:#C5D8D1;
+    background-color:#06BCC1;
+}
+.footer p {
+    float:left; 
+    width:100%; 
+    text-align:center; 
+}
+
+.typewrite {
+    color:#C5D8D1;
+}
+
+/* 
+
+FADE IN ANIMATION FOR ABOUT PAGE
+
+*/
+
+.fade-in {
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }}

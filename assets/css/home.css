@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+/*
+COLOR THEME
+
+#12263A PRUSSIAN BLUE
+#06BCC1 ROBIN EGG BLUE
+#C5D8D1 ASH GREY
+----------------
+*/
+
+/* -------------NAV------------*/
+
+nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex: row;
+    justify-content: center;
+
+    background: #06BCC1;
+}
+
+nav a {
+    padding: .5em 2em;
+    text-decoration: none;
+    color:#C5D8D1;
+}
+
+nav a:hover{
+    background: #12263A;
+}
+
+   header {
+    color:#C5D8D1;
+    display: flex;
+    flex: row;
+    position: absolute;
+    padding-bottom:30em;
+  
+}
+
+h1 {
+    font-size: 8em;
+}
+
+
+/* -------WORDS ANIMATION------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #12263A;
+  }
+  .wrapper{
+    display: flex;
+  }
+  .wrapper .static-txt{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+  }
+  .wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: #06BCC1;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #12263A;
+    border-left: 2px solid #06BCC1;
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
+
+
+  /*-----FOOTER------*/
+
+  .footerWrap {
+    width:100%;
+    position:fixed;
+    bottom: 1em;
+    height: 1em;
+}
+.footer {
+    width: 100%;
+}
+.footerContent {
+    float:left;
+    width:100%;
+    color:#C5D8D1;
+    background-color:#06BCC1;
+}
+.footer p {
+    float:left; 
+    width:100%; 
+    text-align:center; 
+}
+
+/*------ FADE IN ANIMATION--------*/
+
+.fade-in {
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }}
